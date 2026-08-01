@@ -17,11 +17,9 @@
     <packaging>pom</packaging>
 
     <name>agent-cloud</name>
-    <description>Agent Cloud microservices parent project</description>
 
     <modules>
         <module>agent-cloud-gateway</module>
-        <module>agent-cloud-nacos</module>
         <module>agent-cloud-system</module>
     </modules>
 
@@ -35,6 +33,7 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- 统一管理 Spring Cloud 网关、负载均衡等组件版本 -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -42,6 +41,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!-- 统一管理 Spring Cloud Alibaba Nacos 客户端组件版本 -->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>

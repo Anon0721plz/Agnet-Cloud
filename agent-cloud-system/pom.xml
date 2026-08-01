@@ -8,24 +8,28 @@
         <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <groupId>org.agentcloud.modules</groupId>
+
     <artifactId>agent-cloud-system</artifactId>
     <name>agent-cloud-system</name>
     <description>agent-cloud-system</description>
+
     <dependencies>
+        <!-- 提供 System 服务的 Spring MVC Web 接口能力 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!-- 将 System 服务注册到 Nacos 供网关和其他服务发现 -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
+        <!-- 从 Nacos 配置中心加载 System 服务运行参数 -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
-
+        <!-- 提供 Controller 单元测试与 Spring Boot 集成测试支持，仅测试阶段使用 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -35,6 +39,7 @@
 
     <build>
         <plugins>
+            <!-- 将当前模块打包为可独立启动的 Spring Boot 应用 -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
