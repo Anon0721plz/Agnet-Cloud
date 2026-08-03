@@ -1,4 +1,4 @@
-package org.agentcloud.modules.agentcloudagentcard;
+package org.agentcloud.modules.agentcard;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

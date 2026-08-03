@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/agent-cloud-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/agent-cloud-nacos/pom.xml" />
         <option value="$PROJECT_DIR$/agent-cloud-system/pom.xml" />
+        <option value="$PROJECT_DIR$/agent-cloud-agentcard/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -7,7 +7,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.0</version>
+        <version>3.5.8</version>
         <relativePath/>
     </parent>
 
@@ -28,9 +28,11 @@
         <java.version>17</java.version>
         <spring-cloud.version>2025.0.0</spring-cloud.version>
         <spring-cloud-alibaba.version>2025.0.0.0</spring-cloud-alibaba.version>
+        <spring-ai-alibaba.version>1.1.2.0</spring-ai-alibaba.version>
+        <spring-ai.version>1.1.2</spring-ai.version>
+        <nacos.client.version>3.1.0</nacos.client.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <spring.ai.alibaba.version>1.1.2.0</spring.ai.alibaba.version>
     </properties>
 
     <dependencyManagement>
@@ -43,6 +45,14 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!-- 统一管理 OpenAI 等 Spring AI 模型客户端组件版本 -->
+            <dependency>
+                <groupId>org.springframework.ai</groupId>
+                <artifactId>spring-ai-bom</artifactId>
+                <version>${spring-ai.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <!-- 统一管理 Spring Cloud Alibaba Nacos 客户端组件版本 -->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
@@ -50,6 +60,18 @@
                 <version>${spring-cloud-alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <!-- 统一管理 Spring AI Alibaba A2A Nacos Starter 版本 -->
+            <dependency>
+                <groupId>com.alibaba.cloud.ai</groupId>
+                <artifactId>spring-ai-alibaba-starter-a2a-nacos</artifactId>
+                <version>${spring-ai-alibaba.version}</version>
+            </dependency>
+            <!-- 覆盖 Spring Cloud Alibaba BOM 的 3.0.3，提供 A2A Agent Registry 所需 API -->
+            <dependency>
+                <groupId>com.alibaba.nacos</groupId>
+                <artifactId>nacos-client</artifactId>
+                <version>${nacos.client.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
