@@ -11,7 +11,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>agent-cloud-agentcard</artifactId>
+    <artifactId>agent-cloud-baseagent</artifactId>
     <name>agent-cloud-agentcard</name>
     <description>agent-cloud-agentcard</description>
 

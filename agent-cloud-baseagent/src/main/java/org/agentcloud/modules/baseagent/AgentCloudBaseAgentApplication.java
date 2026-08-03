@@ -1,13 +1,13 @@
-package org.agentcloud.modules.agentcard;
+package org.agentcloud.modules.baseagent;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AgentCloudAgentcardApplication {
+public class AgentCloudBaseAgentApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(AgentCloudAgentcardApplication.class, args);
+        SpringApplication.run(AgentCloudBaseAgentApplication.class, args);
     }
 
 }

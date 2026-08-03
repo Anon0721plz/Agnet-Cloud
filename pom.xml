@@ -21,7 +21,7 @@
     <modules>
         <module>agent-cloud-gateway</module>
         <module>agent-cloud-system</module>
-        <module>agent-cloud-agentcard</module>
+        <module>agent-cloud-baseagent</module>
     </modules>
 
     <properties>

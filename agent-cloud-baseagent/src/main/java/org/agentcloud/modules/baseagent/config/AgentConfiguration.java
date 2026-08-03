@@ -1,4 +1,4 @@
-package org.agentcloud.modules.agentcard.config;
+package org.agentcloud.modules.baseagent.config;
 
 import com.alibaba.cloud.ai.graph.agent.ReactAgent;
 import org.springframework.ai.chat.model.ChatModel;

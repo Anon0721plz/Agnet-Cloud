@@ -1,4 +1,4 @@
-package org.agentcloud.modules.agentcard.controller;
+package org.agentcloud.modules.baseagent.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

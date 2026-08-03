@@ -1,6 +1,6 @@
 spring:
   application:
-    name: agent-cloud-agentcard
+    name: agent-cloud-baseagent
   config:
     import:
       - optional:nacos:${spring.application.name}.yaml?group=DEFAULT_GROUP
