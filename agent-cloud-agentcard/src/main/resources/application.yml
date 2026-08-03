@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: agent-cloud-agentcard
+  config:
+    import:
+      - optional:nacos:${spring.application.name}.yaml?group=DEFAULT_GROUP
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      discovery:
+        namespace: public
+      config:
+        namespace: public
+        file-extension: yaml

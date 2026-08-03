@@ -21,6 +21,7 @@
     <modules>
         <module>agent-cloud-gateway</module>
         <module>agent-cloud-system</module>
+        <module>agent-cloud-agentcard</module>
     </modules>
 
     <properties>
@@ -29,6 +30,7 @@
         <spring-cloud-alibaba.version>2025.0.0.0</spring-cloud-alibaba.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <spring.ai.alibaba.version>1.1.2.0</spring.ai.alibaba.version>
     </properties>
 
     <dependencyManagement>
