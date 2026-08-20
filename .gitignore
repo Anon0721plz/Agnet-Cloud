@@ -34,3 +34,9 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### 运行时产物（agent-cloud-nacos 本地 nacos-home、Tomcat 工作目录等） ###
+nacos-home/
+logs/
+work/
+derby.log
