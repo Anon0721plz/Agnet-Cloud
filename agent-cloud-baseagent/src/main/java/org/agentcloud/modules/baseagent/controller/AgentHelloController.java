@@ -8,6 +8,6 @@ public class AgentHelloController {
 
     @GetMapping("/agent/hello")
     public String hello() {
-        return "hello agent-cloud-agentcard";
+        return "hello agent-cloud-baseagent";
     }
 }

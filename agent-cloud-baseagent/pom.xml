@@ -12,8 +12,8 @@
     </parent>
 
     <artifactId>agent-cloud-baseagent</artifactId>
-    <name>agent-cloud-agentcard</name>
-    <description>agent-cloud-agentcard</description>
+    <name>agent-cloud-baseagent</name>
+    <description>Agent Cloud 基础问答 Agent 服务</description>
 
     <dependencies>
         <!-- 提供 Agent 的 Spring MVC HTTP 接口 -->
@@ -36,9 +36,11 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
+        <!-- 单元测试与 Spring 测试支持 -->
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

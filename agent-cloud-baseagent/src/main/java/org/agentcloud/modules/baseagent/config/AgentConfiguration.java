@@ -1,6 +1,7 @@
 package org.agentcloud.modules.baseagent.config;
 
 import com.alibaba.cloud.ai.graph.agent.ReactAgent;
+import org.agentcloud.modules.baseagent.prompt.NacosPromptClient;
 import org.springframework.ai.chat.model.ChatModel;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -9,12 +10,12 @@ import org.springframework.context.annotation.Configuration;
 public class AgentConfiguration {
 
     @Bean(name = "baseAgent")
-    public ReactAgent baseAgent(ChatModel chatModel) {
+    public ReactAgent baseAgent(ChatModel chatModel, NacosPromptClient promptClient) {
         return ReactAgent.builder()
                 .name("BaseAgent")
                 .description("Agent Cloud 基础问答助手")
                 .model(chatModel)
-                .instruction("你是 Agent Cloud 的基础问答助手。请使用中文回答，并保持回答准确、简洁。")
+                .instruction(promptClient.loadRequiredPrompt().template())
                 .outputKey("messages")
                 .build();
     }
