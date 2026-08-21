@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/agent-cloud-nacos/pom.xml" />
         <option value="$PROJECT_DIR$/agent-cloud-system/pom.xml" />
         <option value="$PROJECT_DIR$/agent-cloud-agentcard/pom.xml" />
+        <option value="$PROJECT_DIR$/agent-cloud-analysisagent/pom.xml" />
       </list>
     </option>
   </component>
